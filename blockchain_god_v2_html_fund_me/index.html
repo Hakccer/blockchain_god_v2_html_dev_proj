@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapp-Starting</title>
+</head>
+<style>
+    .interactions{
+        width: 100px;
+        height: 30px;
+    }
+
+    #connect_show{
+        margin-top: 50px;
+    }
+</style>
+<body style="display: flex; flex-direction: column; gap: 14px; justify-content: center; align-items: center;">
+    <div id="connect_show">Detecting metamask...</div>
+    <div style="display: flex; gap: 10px;">
+        <button class="interactions">connect</button>
+        <button class="interactions" id="getBalance">getBalance</button>
+    </div>
+    <div style="display: flex; gap: 10px;">
+        <button class="interactions" id="wd_button">Withdraw</button>
+        <button class="interactions" id="fund_button">Fund</button>
+    </div>
+    <input type="number" placeholder="example - 0.1">
+</body>
+<script src="index.js" type="module"></script>
+</html>
